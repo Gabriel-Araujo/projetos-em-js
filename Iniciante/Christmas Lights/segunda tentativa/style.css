@@ -1,0 +1,88 @@
+body {
+    margin: 0%;
+    background-color: #261d29;
+}
+
+#turnOnOff-buttom{
+    background-color: #261d29;
+    margin-top: 100px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #45334b;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+#turnOnOff-buttom:hover {
+    background-color: #45334b;
+}
+
+.container {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25%;
+}
+
+.light {
+    background-color: #2f3530;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+#blue {
+    animation: blue-light;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#red {
+    animation: red-light;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#green {
+    animation: green-light;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#yellow {
+    animation: yellow-light;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes blue-light {
+    0% {background-color: #00395c;}
+    50% {background-color: #009dff}
+    100% {background-color: #00395c;}
+}
+
+@keyframes red-light {
+    0% {background-color: #ff0000;}
+    50% {background-color: #5c0000;}
+    100% {background-color: #ff0000;}
+}
+
+@keyframes green-light {
+    0% {background-color: #005c0c;}
+    50% {background-color: #00ff21;}
+    100% {background-color: #005c0c;}
+}
+
+@keyframes yellow-light {
+    0% {background-color: #f9ff00;}
+    50% {background-color: #5a5c00;}
+    100% {background-color: #f9ff00;}
+}
+
+@keyframes none {
+    50% {background-color: #6b786d;}
+    100% {background-color: #2f3530;}
+}

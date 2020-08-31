@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Border Radius</title>
+</head>
+<body>
+    <div class="center">
+        <h1>The border-radius Property</h1>
+        <p id="box"></p>
+    
+        <div style="margin: auto; width: 50%;">
+            <div style="display: block; ">
+                <h3>valores Atuais:</h3>
+                <p id="top_left_value"></p>
+                <p id="top_right_value"></p>
+                <p id="bottom_left_value"></p>
+                <p id="bottom_right_value"></p>
+            </div>
+
+            <div style="display: block;">
+                <h3>Novos Valores:</h3><br>
+                <form onload="setValues(this.form)">
+                    <label for="tl">Border Radius Top Left:</label>
+                    <input type="text" id="border_top_left" name="tl">
+
+                    <label for="tr">Border Radius Top Right:</label>
+                    <input type="text" id="border top-right" name="tr">
+
+                    <label for="bl">Border Radius Bottom Left:</label>
+                    <input type="text" id="border bottom-left" name="bl">
+
+                    <label for="br">Border Radius Bottom Right:</label>
+                    <input type="text" id="border bottom-right" name="br">
+
+                    <div style="text-align: center;">
+                        <input type="button" value="submit" onclick="changeValues(this.form)" id="buttons">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        
+        <div style="width: 50%; margin: auto; text-align: center;">
+            <h3>Código CSS:</h3>
+            <textarea name="cssText" id="csstext" cols="30" rows="10"></textarea>
+            <button onclick="copyText()" id="buttons">Copiar texto</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#box {
+  margin: auto;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 0px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+  }
+
+  #csstext {
+    height: 200px;
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #buttons {
+    border-radius: 50px;
+  }

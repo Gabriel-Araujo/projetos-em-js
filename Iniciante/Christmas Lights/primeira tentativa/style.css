@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #615070;
+}
+
+.title-bar{
+    text-align: center;
+}
+h1 {
+    color: white;
+    background-color: #41314e;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container {
+    margin: auto;
+    margin-top: 5em;
+    width: 50%;
+    text-align: center;
+}
+
+#ligh-1 {
+    animation-name: blue-light-blink;
+    animation-iteration-count: infinite;
+}
+@keyframes blue-light-blink{
+    0% {fill: #3a7599;}
+    100% {fill: #6ec8ff;}
+}

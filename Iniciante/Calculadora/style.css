@@ -1,0 +1,47 @@
+.container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.display {
+    margin: auto;
+    margin-bottom: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #45626b;
+    padding: 20px; 
+    width: 200px;
+    height: 10px;  
+}
+
+.buttons {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #e7e7e7;
+    width: 70px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #999999;
+}
+
+.buttons:active {
+    background-color: #e7e7e7;
+    box-shadow: 0 2px #999999;
+    transform: translateY(4px);
+}
+
+#numero-do-display {
+    text-align: right;
+    text-transform: uppercase;
+    margin: auto;
+    line-height: 10px;
+}

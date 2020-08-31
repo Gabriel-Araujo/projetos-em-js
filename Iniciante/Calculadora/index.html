@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <h1 id="numero-do-display">0</h1>
+        </div>
+        <div class="primeira-linha">
+            <input type="button" class="buttons" value="C" onclick="main('C')">
+            <input type="button" class="buttons" value="AC" onclick="main('AC')">
+            <input type="button" class="buttons" value="=" onclick="main('=')">
+        </div>
+        <div class="segunda-linha">
+            <input type="button" class="buttons" value="+" onclick="main('+')">
+            <input type="button" class="buttons" value="-" onclick="main('-')">
+            <input type="button" class="buttons" value="*" onclick="main('*')">
+            <input type="button" class="buttons" value="/" onclick="main('/')">
+        </div>
+        <div class="terceira-linha">
+            <input type="button" class="buttons" value="1" onclick="main('1')">
+            <input type="button" class="buttons" value="2" onclick="main('2')">
+            <input type="button" class="buttons" value="3" onclick="main('3')">
+            <input type="button" class="buttons" value="4" onclick="main('4')">
+        </div>
+        <div class="quarta-linha">
+            <input type="button" class="buttons" value="5" onclick="main('5')">
+            <input type="button" class="buttons" value="6" onclick="main('6')">
+            <input type="button" class="buttons" value="7" onclick="main('7')">
+            <input type="button" class="buttons" value="8" onclick="main('8')">
+        </div>
+        <div class="quinta-linha">
+            <input type="button" class="buttons" value="9" onclick="main('9')">
+            <input type="button" class="buttons" value="0" onclick="main('0')">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

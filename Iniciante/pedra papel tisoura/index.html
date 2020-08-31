@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tisoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra Papel Tisoura</h1>
+        <p id="resultado"></p>
+        <div class="computer">
+            <h2>Computador</h2>
+            <img src="images/file.png" alt="" id="computer-choice">
+        </div>
+        <div class="player">
+            <h2>Escolha sua jogada:</h2>
+            <img src="images/paper.png" alt="" id="paper" class="player-choice" onclick="jogada('paper')">
+            <img src="images/rock.png" alt="" id="rock" class="player-choice" onclick="jogada('rock')">
+            <img src="images/scissor.png" alt="" id="scissor" class="player-choice" onclick="jogada('scissor')">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
