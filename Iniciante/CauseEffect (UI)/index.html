@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CauseEffect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Lista de Pessoas</h1>
+    </div>
+    <div class="panel-1">
+        <ul class="people">
+            <li class="person" id="joao" onclick="runAll(this.id)"><p>João</p></li>
+            <li class="person" id="carlos" onclick="runAll(this.id)"><p>Carlos</p></li>
+            <li class="person" id="jessica" onclick="runAll(this.id)"><p>Jessica</p></li>
+        </ul>
+    </div>
+    <div class="panel-2">
+        <h2 class="name" style="display: block; margin-left: 100px;" id="person-name"></h2>
+        <img src="" alt="" id="person-image">
+        <textarea name="descricao" id="person-description" cols="100" rows="10" readonly></textarea>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
