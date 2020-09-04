@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>JSON TO CSV</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Conversor</h1>
+        <ul>
+            <li>
+                <button class="navButton active" onclick="showJSON2CSV()" id="jsonbutton">JSON2CSV</button>
+            </li>
+            <li>
+                <button class="navButton" onclick="showCSV2JSON()" id="csvbutton">CSV2JSON</button>
+            </li>
+        </ul>
+          
+    </div>
+    <div class="container">
+        <h2 id="title">Conversor Json para CSV</h2>
+        <div style="text-align: center;">
+            <h3 id="box1title">Texto em json</h3>
+            <textarea name="sendbox" id="sendbox" class="textbox" cols="60" rows="15"></textarea>
+
+            <div style="display: block; margin: auto; margin-top: 18px;">
+                <button onclick="converter()" id="translatebutton" class="buttons">Converter</button>
+                <button id="clearbutton" class="buttons">Limpar</button>
+            </div>
+
+            <h3 id="box2title">Texto traduzido para o CSV</h3>
+            <textarea readonly name="receiverbox" id="receiverbox" class="textbox" cols="60" rows="15"></textarea>
+            <div style="display: block; margin: auto; margin-top: 18px;">
+                <button class="buttons" onclick="copyText()">Copiar Texto</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/converters.js"></script>
+</body>
+</html>
